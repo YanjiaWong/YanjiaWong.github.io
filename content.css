@@ -282,6 +282,64 @@ li{
     background: #fafafa;
     transition: all .6s;
 }
+
+.xm-plain-box .box-hd{
+    position: relative;
+    height:58px;
+    -webkit-font-smoothing:antialiased;
+}
+.xm-plain-box .box-hd .title{
+    margin:0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height:58px;
+    color:#212121;
+}
+.home-hot-goods .goods-list li, .home-star-goods .goods-list li {
+    height: 300px;
+    padding-top: 39px;
+    margin-left: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    text-align:center;
+    background: #fafafa;
+    transition: all .6s;
+    margin-right: 14px;
+}
+
+.home-hot-goods .box-hd .more, .home-star-goods .box-hd .more {
+    top: 24px;
+}
+.xm-plain-box .box-hd .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+.xm-plain-box .box-hd .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.xm-controls-line-small .control {
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.xm-plain-box .box-hd .more .control {
+    margin-left: -1px;
+}
+
+.box-bd {
+    position:relative;
+    width: 1226px;
+    padding-bottom: 40px;
+}
+
 .home-hot-goods .rainbow-list .rainbow-item-1, .home-star-goods .rainbow-list .rainbow-item-1 {
     border-top-color: #f6aa00;
 }
