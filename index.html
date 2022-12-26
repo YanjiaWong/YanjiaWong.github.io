@@ -108,13 +108,19 @@
         
                     <div class="nav-category-section">
                       <style>
-                        li.nav-category-item:hover{
-                            background-color:#ff6700; 
+                         li.nav-category-item:hover{
+                            background-color:#ff6700;
                         }
       
                         span.text:hover{
-                            color:#ff6700;
+                          color:#ff6700;
+                          cursor:pointer;
                         }
+
+                        img.thumb:hover{
+                          cursor:pointer;
+                        }
+
                       </style>
                       <ul class="nav-category-list">
                           <li class="nav-category-item">
@@ -734,7 +740,6 @@
                     </div>
                   </div>
                     <div class="home-hero-sub">
-                        <ul class="home-promo-list">
                             <li><img src="img/Pic1.png"></li>
                             <li><img src="img/Pic2.png"></li>
                             <li><img src="img/Pic3.png"></li>
@@ -751,77 +756,118 @@
                             <h2 class="title">
                                 <span>明星產品</span>
                             </h2>
-                        </div>
-                        <div class="box-bd">
-                            <div class="xm-carousel-wrapper" style="height:340px; overflow:hidden;">
-                                
-                                <ul class="xm-carousel-list xm-carousel-col-5-list goods-list rainbow-list J_carouselList" style="width: 2480px; margin-left: -1240px; transition: margin-left 0.5s ease 0s;">
-                                    <li class="rainbow-item-1">
-                                        <a class="thumb onetrack-carousel"><img src="img/小米筆電.png"></a>
-                                        <h3 class="title">Xiaomi Book S 12.4</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-2">
-                                        <img src="img/智慧顯示器.png">
-                                        <h3 class="title">小米智慧顯示器</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-3">
-                                        <img src="img/智慧投影機.png">
-                                        <h3 class="title">小米智慧投影機</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-4">
-                                        <img src="img/淨化器.png">
-                                        <h3 class="title">空氣淨化機</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-5">
-                                        <img src="img/吸塵器.png">
-                                        <h3 class="title">米家無線吸塵器</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-6">
-                                        <img src="img/電動打氣機.png">
-                                        <h3 class="title">小米電動打氣機</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-7">
-                                        <img src="img/水離子吹風機.png">
-                                        <h3 class="title">水離子吹風機</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-8">
-                                        <img src="img/電水壺.png">
-                                        <h3 class="title">米家恆溫電水壺</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-9">
-                                        <img src="img/投影機.png">
-                                        <h3 class="title">智慧投影機 標準版</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    <li class="rainbow-item-10">
-                                        <a><img src="img/印表機.png"></a>
-                                        <h3 class="title">小米便攜相片印表機</h3>
-                                        <p class="desc"></p>
-                                        <p class="price">NT$ 20995</p>
-                                    </li>
-                                    
-                                    
-                                </ul> 
 
-
+                            <div class="more">
+                              <style>
+                                a.control.control-next.iconfont.control:hover{
+                                  color: #ff6700;
+                                  cursor:pointer;
+                                }
+                                a.control.control-prev.iconfont.control:hover{
+                                  color: #ff6700;
+                                  cursor:pointer;
+                                }
+                              </style>
+                              <div class="xm-controls xm-controls-line-small xm-carousel-controls">      
+                                <a class="control control-prev iconfont control" onclick="l()"></a>
+                                <a class="control control-next iconfont control" onclick="r()"></a>
+                              </div>
+                              
                             </div>
+                        </div>
+                        
+                        <div class="box-bd">
+                          <div class="xm-carousel-wrapper" style="height:340px; overflow: hidden;">
+                            <ul class="xm-carousel-list1 xm-carousel-col-5-list goods-list rainbow-list J_carouselList" style="width: 2480px;">
+                              <li class="rainbow-item-1">
+                                <a class="thumb onetrack-carousel"><img src="img/小米筆電.png"></a>
+                                <h3 class="title">Xiaomi Book S 12.4</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-2">
+                                  <img src="img/智慧顯示器.png">
+                                  <h3 class="title">小米智慧顯示器</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-3">
+                                  <img src="img/智慧投影機.png">
+                                  <h3 class="title">小米智慧投影機</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-4">
+                                  <img src="img/淨化器.png">
+                                  <h3 class="title">空氣淨化機</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-5">
+                                  <img src="img/吸塵器.png">
+                                  <h3 class="title">米家無線吸塵器</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-6">
+                                  <img src="img/電動打氣機.png">
+                                  <h3 class="title">小米電動打氣機</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-7">
+                                  <img src="img/水離子吹風機.png">
+                                  <h3 class="title">水離子吹風機</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-8">
+                                  <img src="img/電水壺.png">
+                                  <h3 class="title">米家恆溫電水壺</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-9">
+                                  <img src="img/投影機.png">
+                                  <h3 class="title">智慧投影機 標準版</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li>
+                              <li class="rainbow-item-10">
+                                  <a><img src="img/印表機.png"></a>
+                                  <h3 class="title">小米便攜相片印表機</h3>
+                                  <p class="desc"></p>
+                                  <p class="price">NT$ 20995</p>
+                              </li> 
+                            </ul>
+                            <script>
+                              
+                              $(function() {
+                                $('.control-next').click(function() {
+                                  $(".xm-carousel-list1").addClass(".animated");
+                                  $(".xm-carousel-list1").animate({
+                                    marginLeft: "0px",
+                                    marginLeft: "-1239.92px",
+                                  }, 400, function() {
+                                    
+                                
+                                }
+                                );
+                              })
+                            });
+
+                              $(function() {
+                                $('.control-prev').click(function() {
+                                  $(".xm-carousel-list1").animate({
+                                    marginLeft: "-1239.92px",
+                                    marginLeft: "0px",
+                                  }, 400);
+                                });
+                              });
+                              
+                              
+                            </script>
+                          </div>
                         </div>
                     </div>
                 </div>
